@@ -10,6 +10,39 @@
 <h3>
 Draw A home Clip Art using SVG tags
 </h3>
+<svg viewBox="0 0 150 100" width='900' height='600'>
+    <!-- gradient for sky and grass-->
+    <defs>
+        <linearGradient id="gradsky" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(63,121,193);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(2,215,253);stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="gradgrass" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(150, 229, 190);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(47, 107, 67);stop-opacity:1" />  
+        </linearGradient>
+    </defs>
+    <!-- grass -->
+    <rect id='grass' x='0' y='50' width='150' height='50' fill='url(#gradgrass)'></rect>
+    <!-- sky -->
+    <rect id='sky' x='0' y='0' width='150' height='50' fill='url(#gradsky)'></rect>
+    <!-- roof -->
+    <path d='M38 40 L78 20 L118 40 Z' fill='black'/>
+    <!-- house -->
+    <rect id='house' x='40' y='40' width='76' height='50' fill='rgb(183,91,0)'></rect>
+    <!-- door -->
+    <rect id='door' x='55' y='60' width='16' height='30' fill='rgb(179,207,82)'></rect>
+    <!-- window-->
+    <rect id='window' x='85' y='65' width='16' height='15' fill='rgb(200,200,200)'></rect>
+    <line x1='93' y1='65' x2='93' y2='80' style='stroke:rgb(0,0,0); stroke-width:.5;' />
+    <line x1='85' y1='72' x2='101' y2='72' style='stroke:rgb(0,0,0); stroke-width:.5;' />
+    <!-- moon -->
+    <path stroke = "none" fill = "lightgray" d= "M 25,25 A .5 .5    0 1 1 40,10"/>
+    <!-- lightning -->
+    <path d='M120 0 L125 20 L120 40 L125 60 L122 40 L128 20 L125 0 Z' fill='yellow'>
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite" />
+    </path> />
+</svg>
 <p>
     Use your creativity, there is no limit!
 </p>
